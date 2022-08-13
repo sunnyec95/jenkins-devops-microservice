@@ -22,7 +22,9 @@ pipeline {
 		}
 		
 
-	} post {
+	} 
+	
+	post {
 		always {
 			echo 'im awesome. I run always'
 		}
