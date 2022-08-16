@@ -60,7 +60,7 @@ pipeline {
 				script {
 					docker.withRegistry ('', 'dockerhub') {
 						dockerImage.push();
-						dockerImage.push('Jenkins latest microservices');
+						dockerImage.push('latest');
 
 
 					}
