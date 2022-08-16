@@ -29,23 +29,17 @@ pipeline {
 			steps {
 				sh "mvn clean compile"
 			}
-		}
-
-	
+		}	
 		stage('Test') {
 			steps {
 				 sh "mvn Test"
-
-
 			}
 		}
-
         stage('Integration Test') {
 			steps {
 				sh "mvn failsafe:integration-test failsafe:verify"
 			}
-		}
-		
+		}	
 	} 
 	
 	post {
